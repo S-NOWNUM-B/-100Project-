@@ -16,10 +16,10 @@ c1 = Cookbook("Курица")
 print(c1.rezept())
 
 c2 = Cookbook("Мясо")
-print(c2.rezept())
+print(f"\n{c2.rezept()}")
 
 c3 = Cookbook("Рыба")
-print(c3.rezept())
+print(f"\n{c3.rezept()}")
 
 c4 = Cookbook("Пицца")
 print(c4.rezept())
