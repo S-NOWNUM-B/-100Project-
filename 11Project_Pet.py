@@ -40,7 +40,6 @@ class Action(Pet):
 p1 = Pet("Рекс", 10, "собака")
 p2 = Pet("Багира", 8, "кошка")
 p3 = Pet("Шарик", 3, "птица")
-
 print(p1)
 print(p2)
 print(p3)
