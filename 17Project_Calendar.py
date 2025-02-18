@@ -41,14 +41,25 @@ class CalendarApp:
         else:
             print(f"\nНа {date_key} дел нет")
 
+    def show_all_tasks(self):
+        if not self.tasks:
+            print("\nНет задач в календаре.")
+        else:
+            print("\nВсе задачи:")
+            for date_key, task_list in self.tasks.items():
+                print(f"\n{date_key}:")
+                for idx, task in enumerate(task_list, 1):
+                    print(f"  {idx}. {task}")
+
 def main():
     app = CalendarApp()
     while True:
         print("\nКалендарь с делами")
         print("1. Показать календарь")
         print("2. Добавить дело")
-        print("3. Посмотреть дела")
-        print("4. Выйти")
+        print("3. Просмотреть дела")
+        print("4. Просмотреть все дела")
+        print("5. Выйти")
 
         choice = input("Выберите действие: ")
 
@@ -71,6 +82,9 @@ def main():
             app.show_tasks(year, month, day)
 
         elif choice == "4":
+            app.show_all_tasks()
+
+        elif choice == "5":
             print("До свидания!")
             break
         else:
