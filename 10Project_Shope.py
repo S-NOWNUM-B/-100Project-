@@ -18,8 +18,6 @@ class Store:
         total = sum(product.price for product in self.products)
         return total
 
-
-# Пример использования
 product1 = Product("Молоко", 50)
 product2 = Product("Хлеб", 30)
 product3 = Product("Сыр", 100)
