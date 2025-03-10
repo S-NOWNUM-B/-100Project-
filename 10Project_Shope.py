@@ -29,6 +29,7 @@ store.add_product(product3)
 
 print("Товары в магазине:")
 for product in store.products:
+    
     print(product)
 
 print(f"Общая стоимость покупок: {store.total_cost()}$")
